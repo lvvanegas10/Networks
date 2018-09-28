@@ -68,8 +68,6 @@ def connectRoutes(routes, stops):
     for i in stops:
         for j in routes:
             nodeStop = [y for x,y in G.nodes(data=True) if (('stop' in y and y['stop']==i) and ('route' in y and y['route']==j))]
-            #if(len(nodeStop) != 0):
-            #    print(nodeStop[0]['time'])
             for v in nodeStop:
                 for k in routes:
                    if k != j:
@@ -80,10 +78,24 @@ def connectRoutes(routes, stops):
                             weight = nodeT[0]['time'] - v['time']    
                             G.add_edge(node1, node2, weight= weight)
 
+def findStartNode(name, hour):
+    G.add_node(name + ' Start', demand = -1)    
+    nodeStop = [y for x,y in G.nodes(data=True) if (('stop' in y and y['stop']==name) and ('time' in y and y['time']>=hour))]
+    for v in nodeStop:
+        node1 = name + ' Start'
+        node2 = "-".join([v['stop'], v['route'], str(v['time'])])    
+        weight = v['time'] - hour    
+        G.add_edge(node1, node2, weight= weight)
+
+
 loadRoutes(data, allStops)
+
+findStartNode('Main Quad (Campus Oval Side)', 423)
+G.add_node('Palo Alto Transit Center (Caltrain Platform)',  demand = 1)
 
 #G.add_node('Oak Creek Apartments (Across Street On Sand Hill Rd)-S-383',  demand = -1)
 #G.add_node('Stanford Guest House (In Parking Lot)',  demand = 1)
 
-#flowCost, flowDict = nx.network_simplex(G)
-#print(flowCost)
+flowCost, flowDict = nx.network_simplex(G)
+print(flowCost)
+print(flowDict['Main Quad (Campus Oval Side)'+ ' Start'])
