@@ -103,28 +103,5 @@ while(name != name2 ):
     d3 = flowDict[name]
     d2 = {k : v for k,v in d3.items() if v == {0:1} }
     name = list(d2.keys())[0]
-
-# findStartNode('Main Quad (Campus Oval Side)', 423)
-# G.add_node('Palo Alto Transit Center (Caltrain Platform)',  demand = 1)
-# 
-# #G.add_node('Oak Creek Apartments (Across Street On Sand Hill Rd)-S-383',  demand = -1)
-# #G.add_node('Stanford Guest House (In Parking Lot)',  demand = 1)
-# 
-# flowCost, flowDict = nx.network_simplex(G)
-# name = 'Main Quad (Campus Oval Side)' + ' Start'
-# 
-# print(flowCost)
-# #print(flowDict[name])
-# 
-# d3 = {k : v for k,v in flowDict.items() if k == name}
-# d2 = {k : v for k,v in d3.items() if k == 'Main Quad (Campus Oval Side)-C-433' }
-# print(d2)
-# 
-# 
-# 
-# arriveTo = 'Palo Alto Transit Center (Caltrain Platform)'
-
-
-# while (name != arriveTo):
     
 
