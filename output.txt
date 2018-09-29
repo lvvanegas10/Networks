@@ -1,9 +1,0 @@
-Optimal route:
-Station	Bus	Hour
-Main Quad (Campus Oval Side)	C	7:13:00
-Li Ka Shing Center (Campus Dr)	C	7:16:00
-Li Ka Shing Center (Campus Dr)	1050 Arastadero	7:20:00
-Y2E2 (Via Ortega)	1050 Arastadero	7:22:00
-Y2E2 (Via Ortega)	Y	7:35:00
-Medical Center (Roth Way)	Y	7:37:00
-Palo Alto Transit Center (Caltrain Platform)	Y	7:48:00

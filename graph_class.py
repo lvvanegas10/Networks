@@ -14,7 +14,7 @@ class MGraph:
     def __init__(self):
         self.G = nx.MultiDiGraph()
         self.allStops = []
-        self.data = pd.ExcelFile('data.xlsx')
+        self.data = pd.ExcelFile('data/data.xlsx')
         self.loadRoutes()
 
     """
