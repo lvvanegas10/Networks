@@ -43,7 +43,7 @@ def printError(n, n2):
     file_name = '-'.join([n, n2])
     file = open('data/output/'+ file_name +'.txt','w')  
     file.write('Optimal route:' + '\n') 
-    file.write('There no an optimal route between these stops')    
+    file.write('There`s no an optimal route between these stops')    
     file.close() 
 
 # =======================================
