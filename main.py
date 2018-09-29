@@ -49,16 +49,22 @@ def printError(n, n2):
 # =======================================
 # Main   
 # =======================================
-if __name__ == "__main__":    
-    graph = MGraph()
+if __name__ == "__main__":
 
-    name = 'Main Quad (Campus Oval Side)' 
-    name2 = 'Palo Alto Transit Center (Caltrain Platform South)'
-    
-    try:
-        graph.findStartNode(name, 550)
-        graph.G.add_node(name2,  demand = 1)
-        flowCost, flowDict = nx.network_simplex(graph.G)    
-        printOptimalRoute(name + ' Start', name2, flowDict, flowCost) 
-    except:
-        printError(name, name2)
+    file = open('data/inputfile.txt','r')  
+
+    for line in file:
+        data = line.split('-')
+        name = data[0]
+        name2 = data[1]
+        time = int(data[2])
+
+        graph = MGraph()
+           
+        try:
+            graph.findStartNode(name, time)
+            graph.G.add_node(name2,  demand = 1)
+            flowCost, flowDict = nx.network_simplex(graph.G)    
+            printOptimalRoute(name + ' Start', name2, flowDict, flowCost) 
+        except:
+            printError(name, name2)

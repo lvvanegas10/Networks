@@ -1,28 +1,19 @@
-//======================================= 1 - 423
-name = 'Main Quad (Campus Oval Side)' 
-name2 = 'Palo Alto Transit Center (Bus Depot Drop Off)'
-
-name = 'Main Quad (Campus Oval Side)' 
-name2 = 'Palo Alto Transit Center (Bus Depot Pick Up)'
-
-name = 'Main Quad (Campus Oval Side)' 
-name2 = 'Palo Alto Transit Center (Caltrain Platform South)'
-
-name = 'Main Quad (Campus Oval Side)' 
-name2 = 'Palo Alto Transit Center (Caltrain Platform South)'
-
-name = 'Main Quad (Campus Oval Side)' 
-name2 = 'Palo Alto Transit Center (Caltrain Platform)'
-
-//======================================= 2 - 445
-
-//======================================= 3 - 530
-name = Y2E2 (Via Ortega)
-name2 = 1000 Welch Rd-530 
-
-//======================================= 4 - 541
-
-
-//======================================= 5 - 550
-name = '3170 Porter Dr' 
-name2 = '3475 Deer Creek Rd'
+Main Quad (Campus Oval Side)-Palo Alto Transit Center (Bus Depot Drop Off)-423
+Main Quad (Campus Oval Side)-Palo Alto Transit Center (Bus Depot)-423
+Main Quad (Campus Oval Side)-Palo Alto Transit Center (Bus Depot Pick Up)-423
+Main Quad (Campus Oval Side)-Palo Alto Transit Center (Caltrain Platform South)-423
+Main Quad (Campus Oval Side)-Palo Alto Transit Center (Caltrain Platform)-423
+Oak Creek Apartments (Across Street On Sand Hill Rd)-Campus Dr (Across Street from Li Ka Shing Center)-445
+Oak Creek Apartments (Sand Hill Rd)-Campus Dr (Across Street from Li Ka Shing Center)-445
+Y2E2 (Via Ortega)-1000 Welch Rd-530
+3170 Porter Dr-3475 Deer Creek Rd-550
+Palo Alto Transit Center (Bus Depot Drop Off)-Oak Creek Apartments (Across Street On Sand Hill Rd)-550
+Palo Alto Transit Center (Bus Depot)-Oak Creek Apartments (Across Street On Sand Hill Rd)-550
+Palo Alto Transit Center (Bus Depot Pick Up)-Oak Creek Apartments (Across Street On Sand Hill Rd)-550
+Palo Alto Transit Center (Caltrain Platform South)-Oak Creek Apartments (Across Street On Sand Hill Rd)-550
+Palo Alto Transit Center (Caltrain Platform)-Oak Creek Apartments (Across Street On Sand Hill Rd)-550
+Palo Alto Transit Center (Bus Depot Drop Off)-Oak Creek Apartments (Sand Hill Rd)-550
+Palo Alto Transit Center (Bus Depot)-Oak Creek Apartments (Sand Hill Rd)-550
+Palo Alto Transit Center (Bus Depot Pick Up)-Oak Creek Apartments (Sand Hill Rd)-550
+Palo Alto Transit Center (Caltrain Platform South)-Oak Creek Apartments (Sand Hill Rd)-550
+Palo Alto Transit Center (Caltrain Platform)-Oak Creek Apartments (Sand Hill Rd)-550
